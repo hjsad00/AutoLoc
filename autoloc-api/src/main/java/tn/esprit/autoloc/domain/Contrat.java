@@ -9,12 +9,12 @@ import java.time.LocalDate;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name= "Contrat")
 public class Contrat {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idContrat;
-
     private LocalDate dateSignature;
     private Double montantTotal;
     private Boolean valide;

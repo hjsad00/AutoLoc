@@ -2,6 +2,9 @@ package tn.esprit.autoloc.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.engine.internal.Cascade;
+
+import java.util.Set;
 
 @Entity
 @Getter
@@ -18,4 +21,10 @@ public class Agence {
     private String ville;
     private String adresse;
     private String telephone;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "agence")
+    private Set<Vehicule> vehicules;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "agence")
+    private Set<Employe> employes;
 }

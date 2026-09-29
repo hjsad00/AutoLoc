@@ -22,4 +22,6 @@ public class Paiement {
 
     @Enumerated(EnumType.STRING)
     private ModePaiement modePaiement;
+    @ManyToOne(cascade = CascadeType.ALL )
+    Contrat contrat;
 }

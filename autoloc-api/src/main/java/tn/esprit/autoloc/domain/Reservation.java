@@ -22,4 +22,12 @@ public class Reservation {
 
     @Enumerated(EnumType.STRING)
     private StatutReservation statut;
+    @OneToOne (cascade = CascadeType.ALL)
+    private Contrat contrat;
+    @ManyToOne (cascade = CascadeType.ALL)
+    private Client client;
+    @ManyToOne (cascade = CascadeType.ALL)
+    private Vehicule vehicule ;
+
+
 }
