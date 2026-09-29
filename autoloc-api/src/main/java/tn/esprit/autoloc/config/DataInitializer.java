@@ -43,7 +43,7 @@ public class DataInitializer {
                 v3.setTarifJournalier(new BigDecimal("120.00"));
 
                 vehiculeRepository.saveAll(List.of(v1, v2, v3));
-                System.out.println("✅ Véhicules de démonstration insérés avec succès !");
+                System.out.println("Véhicules de démonstration insérés avec succès !");
             }
         };
     }
