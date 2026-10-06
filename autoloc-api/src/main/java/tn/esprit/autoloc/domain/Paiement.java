@@ -2,7 +2,6 @@ package tn.esprit.autoloc.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
-import tn.esprit.autoloc.domain.ModePaiement;
 
 import java.time.LocalDate;
 
