@@ -1,6 +1,6 @@
 package tn.esprit.autoloc.repository;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 import tn.esprit.autoloc.domain.Client;
 
-public interface IClientRepository extends CrudRepository<Client, Long> {
+public interface IClientRepository extends JpaRepository<Client, Long> {
 }
